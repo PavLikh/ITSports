@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url(/fonts/Roboto-Medium.woff2) format('woff2'),
+        url(/fonts/Roboto-Medium.woff) format('woff'),
+        url(/fonts/Roboto-Medium.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url(/fonts/Roboto-Regular.woff2) format('woff2'),
+        url(/fonts/Roboto-Regular.woff) format('woff'),
+        url(/fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+    /* color: #FFFFFF; */
+	text-decoration: none;
+}
+
+body {
+    /* min-height: 100vh; */
+    /* position: relative; */
+    /* background-color: #180C31; */
+    /* background-color: green; */
+    /* font: 16px'Cera Pro', Helvetica, Arial, sans-serif; */
+}
+
+/* 721 blkcn BT */
+
+#app {
+
+}
+
+.light_green {
+    background-color: #B5E527;
+}
+
+.dark {
+    background-color: #16192B;
+}
+
+header {
+    background-color: #16192B;
+    padding-top: 25px;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 25px;
+    /* background: url(/img/ivanov_goal_cska_1fd64ddc72.gif) no-repeat; */
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    vertical-align: inherit;
+    position: relative;
+
+}
+
+
+
+.header__logo-img.activet {
+    left: 0;
+    opacity: 1;
+    position: absolute;
+}
+
+.header__logo-img {
+    transition: opacity 1.2s;
+}
+
+img {
+    vertical-align: top;
+}
+
+.bg-transparent {
+    background: url(/img/ivanov_goal_cska_1fd64ddc72.gif) no-repeat;
+     /* height: 450px; */
+    /* width: 100%; */
+    background-size: cover;
+    object-fit: fill;
+
+    /* background-size: contain; */
+}
+
+.bg-transparent img {
+    width: 100%;
+}
+
+section {
+    padding-left: 4%;
+    padding-right: 4%;
+    color: black;
+    font-family: 'Roboto Regular';
+    margin-bottom: 20px;
+}
+
+p {
+    /* text-align: center; */
+}
+
+.task-header {
+    font-family: 'Roboto Medium';
+    line-height: 120%;
+    font-size: 20px;
+    min-height: 52px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 25px;
+}
+.task-header span {
+    color: #B5E527
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answer {
+    background-color: #B5E527;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
