@@ -99,7 +99,7 @@ section {
     padding-right: 4%;
     color: black;
     font-family: 'Roboto Regular';
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 p {
@@ -108,8 +108,8 @@ p {
 
 .task-header {
     font-family: 'Roboto Medium';
-    line-height: 120%;
-    font-size: 20px;
+    /* line-height: 120%; */
+    font-size: 18px;
     min-height: 52px;
     border-radius: 20px;
     display: flex;
@@ -118,6 +118,8 @@ p {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 25px;
@@ -137,4 +139,43 @@ p {
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.form {
+    /* background-color: blue; */
+    /* align-items: center; */
+    /* width: 400px; */
+    text-align: center;
+    margin: 0;
+}
+
+.btn {
+    border: 1px solid #8C8698;
+    width: 180px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    border-radius: 0;
+    vertical-align: middle;
+    background-color: #16192B;
+    color: #B5E527;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid #fff;
+}
+
+.form-control {
+    background-color: #B5E527;
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    /* background-color: blue; */
+    border: 0;
+    border-bottom: #16192B solid 1px;
+    margin-bottom: 10px;
 }

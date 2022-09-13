@@ -124,7 +124,7 @@ $resultSet = mysqli_query($conn, $sql);</code>
     <div class="answer">
         <p>1. В mysqli_connect() не верный порядок аргументов, соединение с сервером MySQL не будет установлено. Верный порядок: mysqli_connect($hostname, $username, $password, $database)</p><br>
         <p>2. Если соединение установено и в БД есть таблица users, запрос вернет все записи из этой таблицы</p><br>
-        <p>3. Задать условие можно разными способами, например через оператор IN, так как в нашем случае id идут по порядку, воспользуемся оператором BETWEEN</p>
+        <p>3. Запрос на удаление DELETE, задать условие можно разными способами, например через оператор IN, так как в нашем случае id идут по порядку, воспользуемся оператором BETWEEN</p>
     </div>
     <div class=code>
     <pre>
@@ -137,8 +137,18 @@ $resultSet = mysqli_query($conn, $sql);</code>
         <p>7 <span>PHP</span> и <span>HTML</span> Написать форму с одним полей для вода текста и
 кнопкой, по нажатию которой идёт сохранения данных из поля в файл</p>
     </div>
-
-    <p>Массив можно вывести разными способами, например перебрав циклом или преобразовав в строку через implode(). В данном случае массив уже отсортирован, иначе можно было бы воспользоваться функцией sort()</p>
+    <div class="answer">
+        <div class="form">
+    <form action="" method="post">
+		@csrf
+		    <div class="form-group">
+			    <!-- <label for="text">Введите слово:</label> -->
+			    <input type="text" name="text" placeholder="Привет" id="text" class="form-control">
+		    </div>
+		    <button type="submit" class="btn btn-success">Отправить</button>
+	    </form>
+        </div>
+    </div>
 </section>
 @endsection
 
