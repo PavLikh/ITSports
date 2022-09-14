@@ -29,7 +29,7 @@
     </div>
     <div class=code>
     <pre>
-            <code class="language-sql">SELECT * FROM TableName WHERE id=1;</code>
+            <code class="language-sql">SELECT * FROM TableName WHERE id=10;</code>
         </pre>
     </div>
 </section>
@@ -134,19 +134,48 @@ $resultSet = mysqli_query($conn, $sql);</code>
 </section>
 <section>
     <div class="task-header dark">
-        <p>7 <span>PHP</span> и <span>HTML</span> Написать форму с одним полей для вода текста и
+        <p>7 <span>PHP</span> и <span>HTML</span> Написать форму с одним полем для вода текста и
 кнопкой, по нажатию которой идёт сохранения данных из поля в файл</p>
     </div>
     <div class="answer">
+        <p>Для решения нам достаточно проверить получаем ли мы в массиве $_POST значения из формы, и если получаем то нужно открыть файл, произвести запись и закрыть.</p><br>
+    </div>
+    <div class=code>
+    <pre>
+    <code class="language-php">if ($_POST['text']) {
+    $f = fopen("text.txt", "w");
+    fwrite($f, $_POST['text']);
+    fclose($f);
+}&lt;br&gt
+&lt;form action="/" method="post"&gt
+&lt;input type="text" name="text"&gt
+&lt;button type="submit"&gtОтправить&lt;/button&gt
+&lt;/form&gt</code>
+        </pre>
+    </div>
+    <div class="answer end">
+        <div class="flex_container">
+        <div class="left_side">
         <div class="form">
-    <form action="" method="post">
+        <form action="{{ route('home.updateFile') }}" method="post">
 		@csrf
 		    <div class="form-group">
-			    <!-- <label for="text">Введите слово:</label> -->
 			    <input type="text" name="text" placeholder="Привет" id="text" class="form-control">
 		    </div>
-		    <button type="submit" class="btn btn-success">Отправить</button>
+		    <button type="submit" class="btn btn-success" id="submit">Отправить</button>
 	    </form>
+        </div>
+
+        @if(!empty($data))
+        <br>
+        <div class="result">
+        {{ $data }}
+        </div>
+        @endif
+        </div>
+        <div class="right_side">
+            <img src="/img/ontGif.gif" alt="form_video" class="bottom_img">
+        </div>
         </div>
     </div>
 </section>
