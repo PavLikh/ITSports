@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url(/fonts/Roboto-Medium.woff2) format('woff2'),
+        url(/fonts/Roboto-Medium.woff) format('woff'),
+        url(/fonts/Roboto-Medium.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url(/fonts/Roboto-Regular.woff2) format('woff2'),
+        url(/fonts/Roboto-Regular.woff) format('woff'),
+        url(/fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+    /* color: #FFFFFF; */
+	text-decoration: none;
+}
+
+body {
+    min-width: 540px;
+}
+
+#app {
+
+}
+
+.light_green {
+    background-color: #B5E527;
+}
+
+.dark {
+    background-color: #16192B;
+}
+
+header {
+    background-color: #16192B;
+    padding-top: 25px;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 25px;
+    /* background: url(/img/ivanov_goal_cska_1fd64ddc72.gif) no-repeat; */
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    vertical-align: inherit;
+    position: relative;
+
+}
+
+
+
+.header__logo-img.activet {
+    left: 0;
+    opacity: 1;
+    position: absolute;
+}
+
+.header__logo-img {
+    transition: opacity 1.2s;
+}
+
+img {
+    vertical-align: top;
+}
+
+.bg-transparent {
+    background: url(/img/ivanov_goal_cska_1fd64ddc72.gif) no-repeat;
+     /* height: 450px; */
+    /* width: 100%; */
+    background-size: cover;
+    -o-object-fit: fill;
+       object-fit: fill;
+
+    /* background-size: contain; */
+}
+
+.bg-transparent img {
+    width: 100%;
+}
+
+section {
+    padding-left: 4%;
+    padding-right: 4%;
+    color: black;
+    font-family: 'Roboto Regular';
+    margin-bottom: 30px;
+}
+
+p {
+    /* text-align: center; */
+}
+
+.task-header {
+    font-family: 'Roboto Medium';
+    /* line-height: 120%; */
+    font-size: 18px;
+    min-height: 52px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content:center; */
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 25px;
+}
+
+.task-header span {
+    color: #B5E527
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answer {
+    /* background-color: #B5E527; */
+    background-color: #B1D51E;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+.end {
+    padding-bottom: 0;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left_side {
+    padding-left: 30px;
+}
+
+.form {
+    text-align: center;
+    margin: 0;
+}
+
+.btn {
+    border: 1px solid #8C8698;
+    width: 180px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    border-radius: 0;
+    vertical-align: middle;
+    background-color: #16192B;
+    color: #B5E527;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+    font-family: 'Roboto Regular';
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    border: 1px solid #B1D51E;
+}
+
+.form-control {
+    background-color: #B1D51E;
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    border: 0;
+    border-bottom: #16192B solid 1px;
+    margin-bottom: 10px;
+}
+
+.result {
+    width: 340px;
+    margin: 0;
+    border: 1px solid #8C8698;
+    min-height: 30px;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.bottom_img {
+    width: 250px;
+}
+
+@media (max-width: 760px) {
+    .task-header {
+        font-family: 'Roboto Medium';
+        font-size: 15px;
+        min-height: 48px;
+        border-radius: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 26px;
+        padding-right: 26px;
+        margin-bottom: 26px;
+    }
+
+    .btn {
+        border: 1px solid #8C8698;
+        width: 150px;
+        height: 40px;
+        line-height: 34px;
+        font-size: 14px;
+    }
+
+    .form-control {
+        width: 300px;
+        height: 34px;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .result {
+        width: 240px;
+        margin: 0;
+        min-height: 25px;
+        border-radius: 6px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .bottom_img {
+        width: 150px;
+    }
+}
+
